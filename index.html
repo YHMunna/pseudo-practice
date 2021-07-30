@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pesudo</title>
+    <style>
+        h1 {
+            display: inline-block;
+        }
+        
+        h1:hover::after,
+        h1:hover::before {
+            content: '';
+            background-color: red;
+            height: 2px;
+            width: 100%;
+            display: block;
+        }
+        
+        h2::after {
+            content: ' ra';
+            color: red;
+        }
+        
+        h2::before {
+            content: 'kire ';
+            color: red;
+        }
+        
+        input:required {
+            content: " *  ";
+            color: red;
+        }
+        
+        label::after {
+            content: " *  ";
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <label>Label</label>
+    <input type="text" required>
+
+
+    <h1>mja kortesi</h1>
+    <h2>ki koros vai brother</h2>
+</body>
+
+</html>
